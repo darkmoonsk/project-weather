@@ -1,5 +1,5 @@
-# Proyecto Weather
-Bem-vindo ao Projeto Weather, da Squad Hadas! Este projeto é um aplicativo da web que fornece informações meteorológicas em tempo real. Com base na localização fornecida pelo usuário, o aplicativo exibirá dados de previsão do tempo.
+# HadasClima
+Bem-vindo ao projeto HadasClima, da Squad Hadas! Este projeto é um aplicativo da web que fornece informações meteorológicas em tempo real. Com base na localização fornecida pelo usuário, o aplicativo exibirá dados de previsão do tempo.
 
 ## Funcionalidades
 
@@ -14,7 +14,7 @@ Bem-vindo ao Projeto Weather, da Squad Hadas! Este projeto é um aplicativo da w
 
 ## Tecnologias Utilizadas
 
-O nosso Web App de Clima foi desenvolvido utilizando as seguintes tecnologias:
+O nosso web app de clima foi desenvolvido utilizando as seguintes tecnologias:
 
 -   **HTML5:** Utilizado para a estruturação do aplicativo e a criação dos elementos da interface.
     
@@ -22,4 +22,4 @@ O nosso Web App de Clima foi desenvolvido utilizando as seguintes tecnologias:
     
 -   **JavaScript:** Utilizado para a implementação da lógica de busca e exibição dos dados meteorológicos, bem como para interações dinâmicas na interface.
     
--   **API de Clima:** O aplicativo faz uso de uma API de clima para obter os dados meteorológicos em tempo real. A API utilizada pode ser especificada no arquivo de configuração do aplicativo.
+-   **API de Clima:** O aplicativo faz uso da API de clima OpenWeather para obter os dados meteorológicos em tempo real. A API utilizada pode ser especificada no arquivo de configuração do aplicativo.
