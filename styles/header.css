@@ -1,0 +1,91 @@
+header {
+    width: 100%;
+}
+.topHeader {
+    background-color: #003060;
+    width: auto;
+    height: 50px;
+}
+
+.topHeader .inputSearch {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    margin-right: 5%;
+    padding-top: 10px;    
+}
+
+.topHeader img {
+    margin-left: 5px;
+}
+
+.topHeader input{
+    all: unset;
+    background-color: #003060;
+    border-bottom: 2px solid#055C9D;
+} 
+.topHeader input::placeholder {
+    color: #055C9D;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.bottomHeader {
+    background-color: #003060D9;
+    width: auto;
+    height: 50px;   
+    
+}
+
+.bottomHeader .theme, .languages, p, .toggle {
+    display: inline-flex;   
+    
+}
+
+.bottomHeader .region {
+    margin-left: 40px;
+    font-size: 26px;
+    font-weight: bold; 
+    margin-top: 3px; 
+}
+
+.bottomHeader .theme {
+    padding-left: 20px;
+    font-size: 14px;   
+}
+
+.bottomHeader .languages {
+    margin-left: 52%;
+    border-right: 1px solid #F2F2F226;
+    padding-right: 30px;
+    font-size: 14px;       
+
+}
+
+.bottomHeader .languageOption {
+    margin-left: 10px;
+}
+
+.bottomHeader .languages p:not(.languageOption) {
+    margin-right: 20px;
+}
+
+.bottomHeader .theme p {
+    margin-right: 10px;    
+}
+
+.bottomHeader p.selected {
+    background-color: #003060;
+    border-radius: 10px;    
+    padding: 0 3px 0 3px;
+}
+
+.bottomHeader .theme .toggle {
+    margin-top: 3px;
+}
+
+
+
+
+
