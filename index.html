@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/sideMenu.css">
-    <link rel="stylesheet" href="./styles/topBar.css">
     <link rel="stylesheet" href="./styles/card.css">   
     <link rel="stylesheet" href="./styles/header.css">  
     <link rel="stylesheet" href="./styles/toggle.css">  
@@ -39,33 +38,33 @@
     </aside>   
     <header>
         <div class="topHeader">
+            <button class="btnSandwich">
+                <img class="btnSandwich__img" src="./images/sandwich.svg" alt="Icone do menu">
+            </button>
             <div class="inputSearch">
                 <input type="text" placeholder="Pesquisar">    
-                <img src="images/lupa.png" alt="lupa">     
+                <img src="./images/lupa.png" alt="lupa">     
             </div>               
         </div>
         <div class="bottomHeader">            
             <p class="region">Brasil</p>
-            <div class="languages">
-                <p>Idioma</p>
-                <p class="languageOption selected">PT-BR</p>
-                <p class="languageOption">ES</p>                                       
-            </div>
-            <div class="theme">
-                <p>Modo noturno</p>  
-                <div class="toggle">
-                    <input type="checkbox" id="switch"/>
-                    <label for="switch">Toggle</label> 
-		        </div>
+            <div class="options">
+                <div class="languages">
+                    <p>Idioma</p>
+                    <p class="languageOption selected">PT-BR</p>
+                    <p class="languageOption">ES</p>                                       
+                </div>
+                <div class="theme">
+                    <p>Modo noturno</p>  
+                    <div class="toggle">
+                        <input type="checkbox" id="switch"/>
+                        <label for="switch">Toggle</label> 
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- Podem comentar esta div quando estiverem desenvolvendo, por enquanto ela é só para testar o menu no tablet/mobile -->    
-    <div class="test">
-        <button class="btnSandwich">
-            <img class="btnSandwich__img" src="./images/sandwich.svg" alt="Icone do menu">
-        </button>
-    </div>
+    </header>   
+    
     <script src="./scripts/script.js"></script>
 </body>
 </html>

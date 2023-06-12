@@ -55,23 +55,18 @@ footer {
     display: flex;
     justify-content: center;
     padding: 0.5rem ;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .menuOpen {
     left: 0;
 }
 
-.test {
-    display: none;
-    padding: 0.5rem 1rem;
-    background-color: #003060;
-}
-
 .btnSandwich {
+    display: absolute;
     cursor: pointer;
     display: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0 1.5rem;
     background-color: transparent;
     border: none;
 }
@@ -85,6 +80,7 @@ footer {
 @media (max-width: 960px) {
     .sideMenu {
         position: absolute;
+        z-index: 100;
     }
 
     .btnClose {
@@ -116,7 +112,7 @@ footer {
     }
 
     footer {
-        font-size: 0.5rem;
+        font-size: 0.4rem;
     }
 }
 
