@@ -88,11 +88,6 @@
         margin-bottom: 32px;
     }
 
-    .highlights__image {
-        width: 180px;
-        height: 180px;
-    }
-
     .highlights__info {
         text-align: end;
     }
@@ -100,4 +95,20 @@
     .card__extra-info {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .highlights__image {
+        width: 120px;
+        height: 120px;
+    }
+    
+
+    .highlights__title {
+        font-size: 32px;
+    }
+
+    .highlights__temperature {
+        font-size: 56px;
+    }    
 }
