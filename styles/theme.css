@@ -1,21 +1,25 @@
 .dark-mode-primary {
-    background-color: #222222;
+    background-color: var(--dm-darker);
 }
 
 .dark-mode-secondary {
-    background-color: #444444;
+    background-color: var(--dm-dark);
 }
 
 .dark-mode-tertiary {
-    background-color: #222222D9;
+    background-color: var(--dm-darker-85);
 }
 
+
+/* Side Menu */
 .sideMenu.dark-mode-primary .target {
-    background-color: #444444;
+    background-color: var(--dm-dark);
 }
 
+
+/* Header */
 .topHeader.dark-mode-primary .inputSearch {
-    border-bottom: 2px solid #444444;
+    border-bottom: 2px solid var(--dm-dark);
 }
 
 .topHeader.dark-mode-primary .inputSearch input {
@@ -23,14 +27,20 @@
 }
 
 .topHeader.dark-mode-primary .inputSearch input::placeholder{
-    color: #444444;
+    color: var(--dm-dark);
 }
 
 .bottomHeader.dark-mode-tertiary p.selected {
-    background-color: #222222;
+    background-color: var(--dm-darker);
 }
 
 .bottomHeader.dark-mode-tertiary input:checked + label {
-    background-color: #222222;
+    background-color: var(--dm-darker);
 }
+
+/* Card */
+body.dark-mode-secondary div.card {
+    background: linear-gradient(92.74deg, var(--dm-darker) 0%, var(--dm-dark) 50.97%, var(--dm-medium) 99.85%);
+}
+
 
