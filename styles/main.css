@@ -8,12 +8,12 @@
     --white: #F2F2F2;
 
     /* COLORS DARK MODE*/
-    /* --light: #CCCCCC;
-    --medium: #888888;
-    --dark: #444444;
-    --darker: #222222;
-    --darker-85: #22222285;
-    --white: #F2F2F2; */
+    --dm-light: #CCCCCC;
+    --dm-medium: #888888;
+    --dm-dark: #444444;
+    --dm-darker: #222222;
+    --dm-darker-85: #22222285;
+    /* --dm-white: #F2F2F2;  */
 
     /* FONT */
     --font: 'Poppins', sans-serif;

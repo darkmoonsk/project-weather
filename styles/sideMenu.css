@@ -6,7 +6,7 @@
     width: 350px;
     height: 100vh;
     transition: left 0.3s ease-in-out;
-    background-color: #003060;
+    background-color: var(--darker);
 }
 
 .btnClose {
@@ -17,7 +17,7 @@
     right: 10px;
     background-color: transparent;
     border: none;
-    color: #F2F2F2;
+    color: var(--white);
     font-size: 1.5rem;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .target {
-    background-color: #055C9D;
+    background-color: var(--medium);
 }
 
 footer {
@@ -74,7 +74,7 @@ footer {
 .btnSandwich__img {
     user-select: none;
     width: 1.5rem;
-    color: #FFF;
+    color: var(--white);
 }
 
 @media (max-width: 960px) {

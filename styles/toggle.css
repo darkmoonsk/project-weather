@@ -9,7 +9,7 @@ input[type=checkbox]{
     text-indent: -9999px;
     width: 35px;
     height: 17px;
-    background: #003060;
+    background: var(--darker);
     display: block;
     border-radius: 100px;
     position: relative;
@@ -22,13 +22,9 @@ input[type=checkbox]{
     left: 1px;
     width: 10px;
     height: 10px;
-    background: #fff;
+    background: var(--white);
     border-radius: 90px;
     transition: 0.3s;
-  }
-  
-  input:checked + label {
-    background: #055C9D;
   }
   
   input:checked + label:after {
