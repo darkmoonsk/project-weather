@@ -7,11 +7,43 @@
 
 body {
     display: flex;
-    background-color: #FFF;
-    color: #FFF;
-    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+    color: var(--white);
+    font-family: var(--font);
 }
 
 ul {
     list-style: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 350px);
+}
+
+:root {
+    /* COLORS LIGHT MODE*/
+    --light: #68BBE3;
+    --medium: #0E86D4;
+    --dark: #055C9D;
+    --darker: #003060;
+    --darker-85: #00306085;
+    --white: #F2F2F2;
+
+    /* COLORS DARK MODE*/
+    /* --light: #CCCCCC;
+    --medium: #888888;
+    --dark: #444444;
+    --darker: #222222;
+    --darker-85: #22222285;
+    --white: #F2F2F2; */
+
+    /* FONT */
+    --font: 'Poppins', sans-serif;
+
+    /* FONT WEIGHT */
+    --regular: 400;
+    --bold: 700;
 }

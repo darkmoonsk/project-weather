@@ -37,35 +37,67 @@
             <p>Desenvolvido pela Squad Hadas - Alura Latam</p>
         </footer>
     </aside>   
-    <header>
-        <div class="topHeader">
-            <button class="btnSandwich">
-                <img class="btnSandwich__img" src="./images/sandwich.svg" alt="Icone do menu">
-            </button>
-            <div class="inputSearch">
-                <input type="text" placeholder="Pesquisar">    
-                <img src="./images/lupa.png" alt="lupa">     
-            </div>               
-        </div>
-        <div class="bottomHeader">            
-            <p class="region">Brasil</p>
-            <div class="options">
-                <div class="languages">
-                    <p>Idioma</p>
-                    <p class="languageOption selected">PT-BR</p>
-                    <p class="languageOption">ES</p>                                       
-                </div>
-                <div class="theme">
-                    <p>Modo noturno</p>  
-                    <div class="toggle">
-                        <input type="checkbox" id="switch"/>
-                        <label for="switch">Toggle</label> 
+    <div class="container">
+        <header>
+            <div class="topHeader">
+                <button class="btnSandwich">
+                    <img class="btnSandwich__img" src="./images/sandwich.svg" alt="Icone do menu">
+                </button>
+                <div class="inputSearch">
+                    <input type="text" placeholder="Pesquisar">    
+                    <img src="./images/lupa.png" alt="lupa">     
+                </div>               
+            </div>
+            <div class="bottomHeader">            
+                <p class="region">Brasil</p>
+                <div class="options">
+                    <div class="languages">
+                        <p>Idioma</p>
+                        <p class="languageOption selected">PT-BR</p>
+                        <p class="languageOption">ES</p>                                       
+                    </div>
+                    <div class="theme">
+                        <p>Modo noturno</p>  
+                        <div class="toggle">
+                            <input type="checkbox" id="switch"/>
+                            <label for="switch">Toggle</label> 
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>   
-    
+        </header>   
+        <main>
+            <div class="card">
+                <div class="card__highlights">
+                    <img src="./images/image-17.png" alt="Parcialmente Nublado" class="highlights__image">
+                    <div class="highlights__info">
+                        <span class="highlights__title">São Paulo</span>
+                        <span class="highlights__subtitle">Parcialmente Nublado</span>
+                        <span class="highlights__temperature">18ºC</span>
+                        <span class="highlights__min-max">MIN 12ºC | MAX 18ºC</span>
+                    </div>
+                </div>
+                <div class="card__extra-info">
+                    <div class="extra-info__info">
+                        <span class="extra-key">Sensação Térmica</span>
+                        <span class="extra-info__value">17ºC</span>
+                    </div>
+                    <div class="extra-info__info">
+                        <span class="extra-key">Vento</span>
+                        <span class="extra-info__value">15 km/h</span>
+                    </div>
+                    <div class="extra-info__info">
+                        <span class="extra-key">Qualidade do Ar</span>
+                        <span class="extra-info__value">Ótima</span>
+                    </div>
+                    <div class="extra-info__info">
+                        <span class="extra-key">Visibilidade</span>
+                        <span class="extra-info__value">16 km</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
