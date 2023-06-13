@@ -1,0 +1,36 @@
+.dark-mode-primary {
+    background-color: #222222;
+}
+
+.dark-mode-secondary {
+    background-color: #444444;
+}
+
+.dark-mode-tertiary {
+    background-color: #222222D9;
+}
+
+.sideMenu.dark-mode-primary .target {
+    background-color: #444444;
+}
+
+.topHeader.dark-mode-primary .inputSearch {
+    border-bottom: 2px solid #444444;
+}
+
+.topHeader.dark-mode-primary .inputSearch input {
+    background-color: transparent;
+}
+
+.topHeader.dark-mode-primary .inputSearch input::placeholder{
+    color: #444444;
+}
+
+.bottomHeader.dark-mode-tertiary p.selected {
+    background-color: #222222;
+}
+
+.bottomHeader.dark-mode-tertiary input:checked + label {
+    background-color: #222222;
+}
+
