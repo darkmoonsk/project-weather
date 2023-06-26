@@ -15,7 +15,7 @@ async function obterDadosClima(cidade, idioma) {
 
 async function getAirQuality (lat, lon) {
     try {
-        const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+        const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
         const request = await fetch(url);
         const airQuality = await request.json();
 
