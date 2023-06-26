@@ -1,11 +1,9 @@
-let activeRequest = 0;
 const apiKey = "cba97dfcd3855f5d4abe4ee1027cc09f";
 
 async function obterDadosClima(cidade, idioma) {  
-    ++activeRequest;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&lang=${idioma}`;
     try {
-        const response = await fetch(url, {signal});
+        const response = await fetch(url);
         const dados = await response.json();
         return dados;
         
@@ -18,7 +16,7 @@ async function obterDadosClima(cidade, idioma) {
 async function getAirQuality (lat, lon) {
     try {
         const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
-        const request = await fetch(url, {signal});
+        const request = await fetch(url);
         const airQuality = await request.json();
 
         if (airQuality.list.length === 0) return "Não foi possível obter a qualidade do ar";

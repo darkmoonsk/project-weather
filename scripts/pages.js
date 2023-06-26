@@ -120,9 +120,9 @@ const worldCities = [
 const menuItems = document.querySelectorAll(".menu li");
 let currentPage = "Brasil";
 
-// window.addEventListener("load", () => {
-//     makeCardList("Brasil");
-// });
+window.addEventListener("load", () => {
+    makeCardList("Brasil");
+});
 
 menuItems.forEach((item) => {
     item.addEventListener("click", (event) => {
