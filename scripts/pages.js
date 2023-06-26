@@ -120,9 +120,9 @@ const worldCities = [
 const menuItems = document.querySelectorAll(".menu li");
 let currentPage = "Brasil";
 
-window.addEventListener("load", () => {
-    makeCardList("Brasil");
-});
+// window.addEventListener("load", () => {
+//     makeCardList("Brasil");
+// });
 
 menuItems.forEach((item) => {
     item.addEventListener("click", (event) => {
@@ -131,8 +131,8 @@ menuItems.forEach((item) => {
         const targetItem = document.querySelector(".target");
         targetItem.classList.remove("target");
         event.target.classList.add("target");
-        makeCardList(event.target.textContent);
         currentPage = event.target.textContent;
+        makeCardList(event.target.textContent);
     });
 });
 
@@ -189,9 +189,9 @@ async function makeCardList(page) {
         const main = document.querySelector("main");
         main.innerHTML = "";
         const cities = page !== "Mundo"? worldCities.filter(city => city.location === page) : worldCities.filter(city => city.worldCity === true);
-
-        for (const city of cities) {
+        for (const city of cities) { 
             const card = await makeCard(city.city);
+            if(currentPage !== page) break;
             main.insertAdjacentHTML("beforeend", card);
         }
     } catch (error) {
