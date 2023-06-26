@@ -41,6 +41,11 @@ ul {
     list-style: none;
 }
 
+main {
+    overflow-y: scroll;
+    max-height: 88vh;
+}
+
 
 .container {
     display: flex;
