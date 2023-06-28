@@ -142,10 +142,12 @@ async function makeCard(city) {
     const cityData = await obterDadosClima(city, "pt");
     const cityAirQuality = await getAirQuality(cityData.coord.lat, cityData.coord.lon);
 
+    const weatherIcon = getIcon(cityData.weather[0])
+
     const card = `
             <div class="card">
                 <div class="card__highlights">
-                    <img src="./images/image-17.png" alt="${cityData.weather[0].description}" class="highlights__image">
+                    <img src=${weatherIcon} alt="${cityData.weather[0].description}" class="highlights__image">
                     <div class="highlights__info">
                         <span class="highlights__title">${cityData.name === "fpolis"? "Florianópolis" : cityData.name}</span>
                         <span class="highlights__subtitle">${capitalizeFirstLetter(cityData.weather[0].description)}</span>
@@ -220,6 +222,8 @@ function capitalizeFirstLetter(string) {
 }
 
 // Para Nath 
-function getWeatherImagePath(id) {
+function getIcon (weather) {
+    const icon = weather.icon;
 
-} 
+    return `https://openweathermap.org/img/wn/${icon}@4x.png`
+}
