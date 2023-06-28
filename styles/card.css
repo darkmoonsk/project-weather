@@ -123,10 +123,29 @@
     
 
     .highlights__title {
+        text-align: start;
+        white-space: nowrap;
+        direction: rtl;
         font-size: 32px;
+    }
+
+    .highlights__subtitle, .highlights__min-max, .highlights__temperature {
+        text-align: start;
+        white-space: nowrap;
+        direction: rtl;
     }
 
     .highlights__temperature {
         font-size: 56px;
     }    
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        padding:32px 15px;
+    }
+
+    .highlights__title {
+        white-space: wrap;
+    }
 }
