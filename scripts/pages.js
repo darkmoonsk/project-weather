@@ -153,7 +153,7 @@ async function makeCard(city) {
                         <span class="highlights__subtitle">${capitalizeFirstLetter(cityData.weather[0].description)}</span>
                         <span class="highlights__temperature">${convertKelvinToCelsius(cityData.main.temp)}ºC</span>
                         <span class="highlights__min-max">
-                        ${convertKelvinToCelsius(cityData.main.temp_min)}ºC | MAX ${convertKelvinToCelsius(cityData.main.temp_max)}ºC
+                        MIN ${convertKelvinToCelsius(cityData.main.temp_min)}ºC | MAX ${convertKelvinToCelsius(cityData.main.temp_max)}ºC
                         </span>
                     </div>
                 </div>
