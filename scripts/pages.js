@@ -141,6 +141,15 @@ menuItems.forEach((item) => {
 
 async function makeCard(city) {
     const cityData = await obterDadosClima(city, "pt");
+    if(cityData.cod === "404") {
+        const notFound = `
+        <div class="notFound">
+            <p>Erro 404</p>
+            <h3>Cidade não encontrada</h3>
+        </div>
+        `
+        return notFound;
+    }
     const cityAirQuality = await getAirQuality(cityData.coord.lat, cityData.coord.lon);
 
     const weatherIcon = getIcon(cityData.weather[0])
@@ -184,9 +193,11 @@ async function makeCard(city) {
 
 async function searchCityWeather() {
     let placeName = document.querySelector(".inputSearch input").value;    
+    
     if (placeName == "") {
-        await makeCardList(defaultPlace);
+        return;
     } else {
+        currentPage = placeName;
         let card = await makeCard(placeName);
         let main = document.querySelector("main");
         main.innerHTML = card;

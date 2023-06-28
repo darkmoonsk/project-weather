@@ -43,4 +43,6 @@ body.dark-mode-secondary div.card {
     background: linear-gradient(92.74deg, var(--dm-darker) 0%, var(--dm-dark) 50.97%, var(--dm-medium) 99.85%);
 }
 
-
+body.dark-mode-secondary .notFound h3 {
+    color: var(--white);
+}

@@ -18,6 +18,15 @@ header {
     border-bottom: 2px solid var(--medium);
 }
 
+.topHeader .inputSearch img {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.topHeader .inputSearch img:hover {
+    transform: scale(1.1);
+}
+
 
 .topHeader input{
     font-weight: 800;
