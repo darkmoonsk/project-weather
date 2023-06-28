@@ -117,11 +117,12 @@ const worldCities = [
     { city: "Moscovo", location: "Ásia" },
 ];
 
+const defaultPlace = "Brasil";
 const menuItems = document.querySelectorAll(".menu li");
 let currentPage = "Brasil";
 
 window.addEventListener("load", () => {
-    makeCardList("Brasil");
+    makeCardList(defaultPlace);
 });
 
 menuItems.forEach((item) => {
@@ -181,10 +182,23 @@ async function makeCard(city) {
     return card;
 }
 
-// Para Evelyn
-function searchCityWeather(cityName) {
-
+async function searchCityWeather() {
+    let placeName = document.querySelector(".inputSearch input").value;    
+    if (placeName == "") {
+        await makeCardList(defaultPlace);
+    } else {
+        let card = await makeCard(placeName);
+        let main = document.querySelector("main");
+        main.innerHTML = card;
+    }
 }
+
+document.querySelector(".inputSearch img").onclick = async () => await searchCityWeather();
+document.querySelector(".inputSearch input").addEventListener('keyup', async (event) => {    
+    if (event.keyCode === 13) {
+        await searchCityWeather();
+    }
+});
 
 async function makeCardList(page) {
     try {
