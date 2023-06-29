@@ -32,6 +32,8 @@
     line-height: 48px;
     font-size: 48px;
     font-weight: var(--bold);
+    direction: rtl;
+    text-align: end;
 }
 
 .highlights__temperature {
