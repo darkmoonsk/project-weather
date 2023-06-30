@@ -119,6 +119,7 @@ const worldCities = [
 
 const defaultPlace = "Brasil";
 const menuItems = document.querySelectorAll(".menu li");
+const region = document.querySelector(".region");
 let currentPage = "Brasil";
 
 window.addEventListener("load", () => {
@@ -128,7 +129,8 @@ window.addEventListener("load", () => {
 menuItems.forEach((item) => {
     item.addEventListener("click", (event) => {
         if (event.target.textContent === currentPage) return;
-
+        
+        region.textContent = event.target.textContent;
         const targetItem = document.querySelector(".target");
         targetItem.classList.remove("target");
         event.target.classList.add("target");
@@ -198,6 +200,7 @@ async function searchCityWeather() {
         return;
     } else {
         currentPage = placeName;
+        region.textContent = "Mundo";
         let card = await makeCard(placeName);
         let main = document.querySelector("main");
         main.innerHTML = card;
