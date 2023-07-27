@@ -215,12 +215,17 @@ document.querySelector(".inputSearch input").addEventListener('keyup', async (ev
 });
 
 async function makeCardList(page) {
+    const cardList = [];
     try {
         const main = document.querySelector("main");
         main.innerHTML = "";
         const cities = page !== "Mundo"? worldCities.filter(city => city.location === page) : worldCities.filter(city => city.worldCity === true);
         for (const city of cities) { 
-            const card = await makeCard(city.city);
+            cardList.push(makeCard(city.city));
+            if(currentPage !== page) break;
+        }
+        const cards = await Promise.all(cardList);
+        for (const card of cards) {
             if(currentPage !== page) break;
             main.insertAdjacentHTML("beforeend", card);
         }
